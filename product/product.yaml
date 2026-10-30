@@ -1,0 +1,12 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Can an AI agent solve a sudoku, or spot one that cannot be solved?"
+summary: "Five sudoku puzzles, from an easy 40-clue warm-up to a hard 25-clue grid, plus one that looks normal but has no solution. The agent fills the grid with only 12 tool calls, and a backtracking solver checks every answer."
+highlights:
+  - "Any correct solution is accepted, checked rule by rule"
+  - "A nearly solved grid earns partial credit"
+  - "One puzzle has no solution, to test whether the agent can tell"
+steps:
+  - "Pick a puzzle, sudoku-01 to sudoku-05"
+  - "The agent fills cells, checking its progress with analyze_grid"
+  - "It submits the solved grid, or says there is no solution"
+  - "The verdict checks every row, column, box and given"
